@@ -12,7 +12,7 @@ contract MockCuratorScript is Script {
     function run() public {
         vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
 
-        mockCuratorFactory = new MockCuratorFactory(0xD3Ec43F60E2AC1517c4DD80C0A23Ad8d902EAF0F);
+        mockCuratorFactory = new MockCuratorFactory(0x34d438480F557592AB8aCf192D16C4C871401438);
 
         console.log("MockCuratorFactory deployed at", address(mockCuratorFactory));
 
